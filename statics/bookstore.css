@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+#bookstore .top-header { 
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    border-bottom: 1px solid #ddd;
+    background: #efeff0;
+}
+
+#bookstore .top-header .tab__swipe {
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+}
+
+#bookstore .top-header .tab__swipe a {
+    display: block;
+    width: 1.5rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    color: #000;
+}
+
+#bookstore .top-header .tab__swipe .active {
+    color: #ff6600;
+}
+
+#bookstore .top-header .slider__swipe {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1.5rem;
+    text-align: center;
+    transition: transform .3s ease-out;
+}
+
+#bookstore .top-header i:after {
+    display: block;
+    width: .6rem;
+    height: 2px;
+    margin: 0 auto;
+    content: '';
+    background: #777;
+}
+
+#bookstore .pull-scroll {
+    position: relative;
+}
+
+#bookstore .content__pull {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+}
+
+#bookstore .top-bar-search {
+    margin: .15rem .2rem;
+    padding-left: .45rem;
+    line-height: .6rem;
+    border: 1px solid #f5f5f5;
+    border-radius: 2px;
+    color: rgba(0, 0, 0, 0.4);
+    background: url(http://image.read.duokan.com/mfsv2/download/fdsc3/p01dSYLeWtSR/tY73MgTfVw7UAS.png) no-repeat 8px center;
+    background-size: 14px;
+    font-size: 12px;
+}
+
+#bookstore .banner {
+    width: 100%;
+    background: #eeece9;
+}
+
+#bookstore .banner img {
+    width: 100%;
+    vertical-align: top;
+}
+
+#bookstore .book-list {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    padding: .2rem .2rem .08rem;
+}
+
+#bookstore .book-list li {
+    width: 33.33%;
+    margin-bottom: .12rem;
+}
+
+#bookstore .book-list .layout {
+    display: inline-block;
+}
+
+#bookstore .book-list .cover {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.96rem;
+    box-shadow: 0px 6px 5px -3px #aaa;
+    background: #eeece9;
+}
+
+#bookstore .book-list .cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#bookstore .book-list li:nth-of-type(3n+1) {
+    text-align: left;
+}
+
+#bookstore .book-list li:nth-of-type(3n+2) {
+    text-align: center;
+}
+
+#bookstore .book-list li:nth-of-type(3n+3) {
+    text-align: right;
+}
+
+#bookstore .book-list .intro {
+    padding-top: .12rem;
+    line-height: .3rem;
+    max-height: .6rem;
+    font-size: 13px;
+    font-weight: 500;
+    color: #8d8d8d;
+    text-align: center;
+    word-break: break-all;
+    overflow: hidden;
+}

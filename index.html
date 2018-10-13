@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>书城</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="format-detection" content="telephone=no" />
+<link href="/statics/reset.css" rel="stylesheet" />
+<link href="/statics/bookstore.css" rel="stylesheet" />
+<link href="/statics/search.css" rel="stylesheet" />
+<link href="/statics/reader.css" rel="stylesheet" />
+<link href="/statics/page.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="root"></div>
+    <!--div style="overflow: hidden;">
+        <div style="background: green; width: 200px; height: 200px; opacity: .5;float: left"></div>
+        <div>123</div>
+        <div style="background: red; width: 200px; height: 200px; opacity: .5;float: left"></div>
+        <div>456</div>
+    </div>
+    <div>sdfs</div-->
+    <!--button id="qj">前进</button>
+    <button id="ht">后退</button-->
+<script src="/cores/require.js" data-main="/src/app"></script>
+<!--script type="text/javascript" src="/cores/zepto.js"></script>
+<script type="text/javascript">
+    var el = document.querySelector('.page__swipe');
+    el.addEventListener('touchend', function (e) {
+        console.log('end');
+        e.preventDefault();
+    }, false);
+    el.addEventListener('click', function () {
+        console.log('click');
+    }, false);
+</script-->
+<!--script type="text/javascript">
+    var qjEl = document.querySelector('#qj');
+    var htEl = document.querySelector('#ht');
+
+    qjEl.addEventListener('click', function () {
+        window.history.pushState('forward', null, '/forward');
+        //history.forward(1);
+    }, false);
+
+    htEl.addEventListener('click', function () {
+        //window.history.pushState('back', null, '/back');
+        history.back(1);
+    }, false);
+
+    window.addEventListener('popstate', function () {
+        console.log('popstate');
+    }, false);
+
+    console.log('是否刷新了页面');
+
+</script-->
+</body>
+</html>

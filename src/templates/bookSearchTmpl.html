@@ -1,0 +1,14 @@
+<% for(var i = 0, len = books.length; i < len; i++) { %>
+    <li>
+        <section>
+            <div class="book-cover">
+                <img src="/statics/img/s.jpg" />
+            </div>
+            <div class="intro">
+                <h3 class="title"><%= books[i].title %></h3>
+                <p class="summary"><%= books[i].content %></p>
+                <em class="author"><%= books[i].author %></em>
+            </div>
+        </section>
+    </li>
+<% } %>

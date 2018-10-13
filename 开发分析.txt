@@ -1,0 +1,39 @@
+1. 框架核心库文件、技术栈库文件、辅助库文件
+Require、Backbone、Flux、Precal、TapEvent、Adaptor、Swipe、PullRefresh
+
+2. 通过分析操作得到操作需要的数据或产生的数据，产生的数据如果是被其他操作引用，那么该数据就是状态，反之则是属性
+
+    状态:
+        选中小说标签名
+        小说标签列表
+        小说列表
+        小说章节
+        阅读器字体
+        阅读器背景颜色
+        阅读器阅读模式 
+
+    全局属性
+        显隐加载数据
+
+    属性：
+        显示搜索小说列表、没找到记录、搜索小说标签列表
+        搜索内容
+        显隐阅读器设置面板
+
+3. 划分组件
+    <TagList />
+    <NovelList />
+    <Reader />
+    <DataLoading />
+    <Search />
+    <NovelTagList />
+    <ReaderSetting />
+    <ReaderFontSetting />
+
+4. 布局
+
+5. 组织CSS
+
+6. 编写基类Store
+
+7. 编写交互逻辑和数据通信

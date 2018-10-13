@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+#reader {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #f7eee5;
+}
+
+#reader .reader-bd {
+    padding: .22rem;
+    font-size: 17px;
+    color: #333;
+    overflow: auto;
+}
+
+#reader .reader-chapter {
+    padding-bottom: .75rem;
+}
+
+#reader .reader-chapter .title {
+    line-height: .46rem;
+    border-bottom: 1px solid #736357;
+    margin-bottom: .3rem;
+    font-size: 20px;
+    color: #736357;
+    letter-spacing: 2px;
+}
+
+#reader .reader-chapter .summary {
+    line-height: .36rem;
+    margin: .5em 0;
+    text-indent: 2em;
+}
+
+#reader .reader-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.reader-mask .reader-setting {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+}
+
+.reader-mask .reader-hd-setting {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    flex: 0 0 .75rem;
+    padding: 0 .15rem;
+    font-size: 14px;
+    color: #d5d5d6;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.reader-mask .reader-bd-setting {
+    flex: 1;
+}
+
+.reader-mask .reader-fd-setting {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.reader-mask .reader-fd-setting .fd-bar {
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+
+.reader-mask .reader-fd-setting .fd-bar a {
+    display: block;
+    width: 33.33%;
+    height: .72rem;
+    line-height: .72rem;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+}
+
+.reader-mask .reader-fd-setting .action-panel__setting {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+.reader-mask .reader-fd-setting .action-panel__setting a {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    width: 50%;
+    height: 1.05rem;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.reader-mask .reader-fd-setting .action-panel__setting .font__setting:before {
+    display: block;
+    content: '';
+    width: .3rem;
+    height: .2rem;
+    margin: 0 auto .18rem;
+    background: url('/statics/img/font.png') no-repeat 0 0;
+    background-size: .3rem .2rem;
+}
+
+.reader-mask .reader-fd-setting .action-panel__setting .font__setting:after {
+    content: '字体';
+}
+
+.reader-mask .reader-fd-setting .action-panel__setting .night__setting:before {
+    display: block;
+    content: '';
+    width: .24rem;
+    height: .24rem;
+    margin: 0 auto .1rem;
+    background: url('/statics/img/night.png') no-repeat 0 0;
+    background-size: .24rem .24rem;
+}
+
+.reader-mask .reader-fd-setting .action-panel__setting .night__setting:after {
+    content: '夜间';
+}
